@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 ~(˶‾᷄ꈊ‾᷅˵)~ </title>
+    <link rel="stylesheet" href="./css/login&zhuche.css">
+</head>
+<body>
+<h1>회원가입</h1>
+    <form id="zhuce-form">
+      <label for="username">아이디:</label>
+      <!-- required는 입력창에 꼭입력해야된다는 속성 -->
+      <input type="text" id="username" required>
+      <br>
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" required>
+      <br>
+      <button type="submit">회원가입</button>
+      <a id="zhuce-link" href="login.html">로그인 하러 가기</a>
+    </form>
+    </form>
+    <script>
+        // 회원가입
+        document.getElementById('zhuce-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if(localStorage.getItem(username)){
+              alert("아이디 중복 되었습니다. 다시 입력하시요.")
+            }else{
+
+            localStorage.setItem(username, password);
+            alert('회원가입 성공하셨어요!!! 환영합니다.♡♡♡♡');
+            window.location.href = "login.html";
+
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+          }
+          });
+    </script>
+</body>
+</html>

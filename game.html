@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game ꒰⑅°͈꒳​°͈꒱･*♡♡♡</title>
+    <link rel="stylesheet" href="./css/foodquez.css">
+    <link rel="stylesheet" href="./css/head.css">
+</head>
+<body>
+     <!-- 머리부분의 로그인/퀴즈게임 관한것 -->
+     <div class="top-bar" id="J_top_bar">
+         <ul class="bar-left">
+             <li>
+                 <a href="index.html" style="font-size: 30px; line-height: 50px;">
+                     <img src="img/logo.jpg" height="25cm" style="margin-left: 30px;">Home
+                 </a>
+             </li>
+             <li><a href="food_list.html">레시피</a></li>
+             <li><a href="#" class="tooltip">Hot <img src="img/hot.png" height="25cm">
+                <span class="tooltiptext">이건 그냥 개수 체우기 위한 링크 이다오. ฅ ˘ฅ</span></a></li>
+             <li><a href="#" onclick="startGame()">Game <img src="img/kawayi.jpg" height="27cm"></a></li>
+         </ul>
+         <div class="login">
+             <ul class="bar-right">
+                 <li id="login-link"></li>
+             </ul>
+         </div>
+     </div>
+     <br><br><br><br><br>
+    <div class="quiz-container">
+        <hr><br>
+        <button id="start-button" onclick="startButton()">Start 1</button><br>
+        <div id="result"></div><br>
+        <div id="image-cat" style="text-align: center;"></div>
+    </div>
+
+    <div class="beijing">
+        <button id="start-button2">Start 2</button><br>
+        <div id="timer"></div><br>
+        <div id="game-board" class="game-board"></div>
+    </div>
+</body>
+</html>
+<script type="text/javascript"  src="./js/quez.js"></script>
+<script type="text/javascript" src="./js/card.js"></script>
+<script type="text/javascript"  src="./js/login.js"></script>

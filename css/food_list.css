@@ -1,0 +1,33 @@
+body{
+  background-color: black;
+}
+.food {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 210px;
+  }
+
+  .food[data-category="kr"] {
+    background-color: rgb(236, 222, 143);
+  }
+
+  .food[data-category="cn"] {
+    background-color: #e6a289;
+  }
+
+  .food[data-category="jp"] {
+    background-color: #9eca9e;
+  }
+
+  .food[data-category="yy"] {
+    background-color: #9baee7;
+  }
+
+  .food img {
+    max-width: 100%;
+    height: auto;
+  }

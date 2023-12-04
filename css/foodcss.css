@@ -1,0 +1,122 @@
+body {
+  background-image: url("../img/DM157.jpg");
+
+}
+
+.img-0{
+  width: 240px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+    color: rgb(71, 66, 66);
+    line-height:50px;
+    height:50px;
+    width:100%;
+    margin-bottom: -30px;
+  }
+
+.recipe-container {
+    background-color: rgba(242, 242, 242, 0.7);
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .ingredients {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .ingredient-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .ingredient-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .seasonings {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .seasoning-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .seasoning-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .cornstarch {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .cornstarch-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .cornstarch-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+.recipe {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background:rgba(242, 242, 242, 0.7);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+  margin-bottom: 25px;
+}
+
+.step h2 {
+  background-color: #3f3d3e;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.step p{
+  display: flex;
+  background-color: #f4f4f4;
+  border-left: 4px solid #e291b0;
+}
+.step p span{
+  padding-top: 30px;
+  color: #736e6e;
+  padding-right: 50px;
+}
+.img_food {
+  padding: 10px 30px 10px 10px;
+  width: 180px;
+  height: 180px;
+}

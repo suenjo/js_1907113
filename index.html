@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main ໒꒰ྀི∩˃ ᵕ ˂∩꒱ྀི১ </title>
+<link rel="stylesheet" href="./css/main_from.css">
+<link rel="stylesheet" href="./css/head.css">
+</head>
+<body>
+<!-- =================================================================== -->
+<!-- 머리부분의 로그인/퀴즈게임 관한것 -->
+    <script type="text/javascript" defer="defer" src="./js/login.js"></script>
+    <div class="top-bar" id="J_top_bar">
+        <ul class="bar-left">
+            <li>
+                <a href="index.html" style="font-size: 30px; line-height: 50px;">
+                    <img src="img/logo.jpg" height="25cm" style="margin-left: 30px;">Home
+                </a>
+            </li>
+            <li><a href="food_list.html">레시피</a></li>
+            <li><a href="#" class="tooltip">Hot <img src="img/hot.png" height="25cm">
+                <span class="tooltiptext">이건 그냥 개수 체우기 위한 링크 이다오. ฅ ˘ฅ</span></a></li>
+            <li><a href="#" onclick="startGame()">Game <img src="img/kawayi.jpg" height="27cm"></a></li>
+            <li><a href="#anchor">선택장애</a></li>
+        </ul>
+        <div class="login">
+            <ul class="bar-right">
+                <li id="login-link"></li>
+            </ul>
+        </div>
+    </div>
+    <br><br><br><br><br>
+<!-- =================================================================== -->
+<!-- 幻灯片hundengpian부분 (defer="defer" 페이지가 로드된후 실행하라는 속성) -->
+
+<div class="button-container">
+    <button onclick="prev_show()" style="color: rgb(215, 105, 31);"><</button>
+    <a href="#" onclick="food_recipe()" id="recipe">
+        <img id="img" src="img/food1.jpg" alt="${foodname}">
+    </a>
+    <button onclick="next_show()" style="color: rgb(215, 105, 31);">></button>
+</div><br><br><br>
+<!-- =================================================================== -->
+<!--리스트 부분-->
+<div>
+    <div>
+    <select id="food_category">
+        <option value="all">전체</option>
+        <option value="kr">한식</option>
+        <option value="cn">중식</option>
+        <option value="jp">일식</option>
+        <option value="yy">양식</option>
+    </select>
+    </div>
+    <div id="foodList">
+        <div class="food" data-category="kr"><a href="./food_recipe/food3.html"><img src="img/food3.jpg" /></a>갈비찜 </div>
+        <div class="food" data-category="kr"><a href="./food_recipe/food10.html"><img src="img/food10.jpg" /></a>칼국수</div>
+        <div class="food" data-category="kr"><a href="./food_recipe/food8.html"><img src="img/food8.jpg" /></a>찜닭</div>
+        <div class="food" data-category="jp"><a href="./food_recipe/food5.html"><img src="img/food5.jpg" /></a>연어덮밥 </div>
+        <div class="food" data-category="jp"><a href="./food_recipe/food6.html"><img src="img/food6.jpg" /></a>소유라멘</div>
+        <div class="food" data-category="cn"><a href="./food_recipe/food4.html"><img src="img/food4.jpg" /></a>짜장면 </div>
+        <div class="food" data-category="cn"><a href="./food_recipe/food2.html"><img src="img/food2.jpg" /></a>마라탕 </div>
+        <div class="food" data-category="cn"><a href="./food_recipe/food1.html"><img src="img/food1.jpg" /></a>마푸두부</div>
+        <div class="food" data-category="yy"><a href="./food_recipe/food9.html"><img src="img/food9.jpg" /></a>파스타 </div>
+        <div class="food" data-category="yy"><a href="./food_recipe/food7.html"><img src="img/food7.jpg" /></a>스테이크 </div>
+    </div>
+    </div><br><br><br>
+<!-- =================================================================== -->
+<!-- 인기 식재료 부분 -->
+    <div class="module5">
+        <div class="list-title">
+          <div class="f4"> <span class="title4">- 인기 식재료</span> </div>
+        </div>
+        <ul class="list3">
+          <li><a href="https://terms.naver.com/entry.naver?docId=777198&cid=48180&categoryId=48248" target="_blank">
+            <img alt="토마토" src="./img/in1.jpg" title="토마토" /><span>토마토</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=4368472&cid=42776&categoryId=59916" target="_blank">
+            <img alt="오이" src="./img/in2.jpg" title="오이" /><span>오이</span></a>
+            </li>
+             <li><a href="https://terms.naver.com/entry.naver?docId=3573624&cid=58839&categoryId=58846" target="_blank">
+            <img alt="연근" src="./img/in3.jpg" title="연근" /><span>연근</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=1056619&cid=40942&categoryId=32726" target="_blank">
+            <img alt="감자" src="./img/in4.jpg" title="감자" /><span>감자</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=4368474&cid=42776&categoryId=59916" target="_blank">
+            <img alt="가지" src="./img/in5.jpg" title="가지" /><span>가지</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=1115480&cid=40942&categoryId=32709" target="_blank">
+            <img alt="수세미 오이" src="./img/in6.jpg" title="수세미 오이" /><span>수세미 오이</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=1055227&cid=40942&categoryId=32495" target="_blank">
+            <img alt="Keuraeb" src="./img/in7.jpg" title="가재" /><span>가재</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=5704226&cid=42776&categoryId=59916" target="_blank">
+            <img alt="굴" src="./img/in8.jpg" title="굴" /><span>굴</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=548385&cid=46639&categoryId=46639" target="_blank">
+                <img alt="조기" src="./img/in9.jpg" title="조기" /><span>조기</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=1170892&cid=40942&categoryId=32581" target="_blank">
+                <img alt="갈치" src="./img/in10.jpg" title="갈치" /><span>갈치</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=1105165&cid=40942&categoryId=32561" target="_blank">
+                <img alt="鲫鱼" src="./img/in11.jpg" title="붕어" /><span>붕어</span></a>
+            </li>
+            <li><a href="https://terms.naver.com/entry.naver?docId=1711575&cid=48180&categoryId=48246" target="_blank">
+                <img alt="소고기" src="./img/in12.jpg" title="소고기" /><span>소고기</span></a>
+            </li>
+        </ul>
+        <hr>
+        </div><br><br><br><br><br><br>
+<!--================================================================================================-->
+<!--음식을 추천받기-->
+<!-- <script type="text/javascript"  src="./js/randomfood.js"></script> -->
+<div id="anchor"></div>
+<a href="#" onclick="random_food_recipe()" style="text-decoration: none;">
+    <img src="./img/food.jpg" id="random_img" alt="${foodname}"><br>
+<p id="foodname">&nbsp;</p></a>
+<button onclick="randomFood()" id="colorButton">(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</button>
+<!--================================================================================================-->
+</body>
+</html>
+<script type="text/javascript"  src="./js/index.js"></script>

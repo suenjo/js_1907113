@@ -1,0 +1,65 @@
+*{
+    margin:0;padding:0
+}
+
+html{
+    width:100%;overflow-x:hidden
+}
+
+.top-bar{
+    height:50px;
+    background:#474545;
+    top:0;
+    position:fixed;
+    z-index:10000;
+    width:100%;
+    left:0;
+    min-width:990px
+}
+
+.bar-left li {
+    float:left;
+    height:50px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.bar-left a:hover {
+    color: #fff;
+    background: #0D0D0D;
+}
+
+.bar-left li a{
+    font-size:16px;
+    color:#d3d6cc;
+    height:50px;
+    line-height:60px;
+    padding:0 12px;
+    text-decoration:none;
+    display:inline-block
+}
+
+#J_top_bar .login,.bar-right li,.bar-right a{
+    height:50px;
+    line-height:60px;
+    margin-right: 10px;
+    list-style: none;
+    color: #000;
+    float: right;
+    text-decoration:none;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
