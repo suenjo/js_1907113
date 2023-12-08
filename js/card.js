@@ -9,12 +9,16 @@
     let click_count = 0;
     let timer;
     let seconds = 0;
+    let gaming = false;
 
     gameStart.addEventListener('click',card_game);
 
     function card_game(){
-        start_game();
-        startTimer();
+        if (!gaming) {
+            start_game();
+            startTimer();
+            gaming = true;
+        }
     }
 
     function start_game() {
